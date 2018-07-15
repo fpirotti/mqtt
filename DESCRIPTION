@@ -5,10 +5,13 @@ Version: 0.2.0
 Date: 2017-12-15
 Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
-           comment = c(ORCID = "0000-0001-5670-2640"))
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("Francesco", "Pirotti", email = "fpirotti@gmail.com", role = c("ctb"), 
+           comment = c(ORCID = "0000-0002-4796-6406"))
   )
 Author: Bob Rudis (bob@rud.is)
 Maintainer: Bob Rudis <bob@rud.is>
+Contributor: Francesco Pirotti <fpirotti@gmail.com>
 Description: 'MQTT' is a machine-to-machine ('M2M')/"Internet of Things" connectivity 
     protocol. It was designed as an extremely lightweight publish/subscribe messaging 
     transport. It is useful for connections with remote locations where a small code 
