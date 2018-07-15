@@ -78,7 +78,7 @@ void message_callback(struct mosquitto *mosq, void *obj, const struct mosquitto_
 // Get mosquitto library version
 //
 // Internal only function unlikely to get exposed to the user
-//
+// FPIROTTI - exposing function
 // [[Rcpp::export]]
 std::string mqtt_version() {
   int maj, min, rev;
