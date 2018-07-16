@@ -113,7 +113,8 @@ bool mqtt_free() { return(mosquitto_lib_cleanup() == 0); };
 //
 // [[Rcpp::export]]
 void subscribe_(
-    std::string host, int port, int keepalive,
+    std::string host, int port,   int keepalive,
+    std::string user, std::string password, std::string cafile,  
     std::string client_id, std::string topic, int qos,
     Rcpp::Function connection_cb, Rcpp::Function message_cb,
     Rcpp::Function disconnect_cb
