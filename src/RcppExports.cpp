@@ -36,7 +36,7 @@ BEGIN_RCPP
 END_RCPP
 }
 // subscribe_
-void subscribe_(std::string host, int port, int keepalive, std::string client_id, std::string topic, int qos, Rcpp::Function connection_cb, Rcpp::Function message_cb, Rcpp::Function disconnect_cb);
+void subscribe_(std::string host, int port, int keepalive, std::string client_id, std::string user, std::string password, std::string cafile,  std::string topic, int qos, Rcpp::Function connection_cb, Rcpp::Function message_cb, Rcpp::Function disconnect_cb);
 RcppExport SEXP _mqtt_subscribe_(SEXP hostSEXP, SEXP portSEXP, SEXP keepaliveSEXP, SEXP client_idSEXP, SEXP topicSEXP, SEXP qosSEXP, SEXP connection_cbSEXP, SEXP message_cbSEXP, SEXP disconnect_cbSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
